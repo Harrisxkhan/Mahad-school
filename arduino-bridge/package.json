@@ -1,0 +1,23 @@
+{
+  "name": "arduino-bridge",
+  "version": "1.0.0",
+  "description": "Bridge server that connects Arduino buttons to the Homework Helper web app",
+  "main": "bridge.js",
+  "scripts": {
+    "start": "node bridge.js",
+    "dev": "nodemon bridge.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "serialport": "^10.5.0",
+    "@serialport/parser-readline": "^10.5.0",
+    "@serialport/bindings-cpp": "^10.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

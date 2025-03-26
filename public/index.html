@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th Grade Homework Helper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="activation-modal" class="activation-modal">
+        <div class="activation-content">
+            <h2>Activate Homework Helper</h2>
+            <p>Please enter your activation code to use this application:</p>
+            <div class="activation-form">
+                <input type="text" id="activation-code" placeholder="Enter your activation code">
+                <button id="activate-button">Activate</button>
+            </div>
+            <div id="activation-status" class="activation-status"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        
+        <h1>5th Grade Homework Helper</h1>
+        <p class="subtitle">Ask your homework questions in English or Urdu</p>
+        
+        <div class="mic-container">
+            <button id="mic-button" class="mic-button" aria-label="Start or stop recording">
+                <i class="fas fa-microphone mic-icon"></i>
+            </button>
+            <div id="status" class="status">Click the microphone to ask your question</div>
+        </div>
+        
+        <div class="transcript-container">
+            <div class="transcript-section">
+                <h3><i class="fas fa-question-circle"></i> Your Question:</h3>
+                <div id="user-transcript" class="transcript"></div>
+            </div>
+            <div class="transcript-section">
+                <h3><i class="fas fa-lightbulb"></i> Helper's Answer:</h3>
+                <div id="ai-transcript" class="transcript"></div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> How to use:</h3>
+            <ol>
+                <li>Click the microphone button</li>
+                <li>Ask your homework question in English or Urdu</li>
+                <li>Click the microphone again when you're done</li>
+                <li>Listen to the answer and read along</li>
+            </ol>
+        </div>
+        
+        <div class="language-indicator">
+            <div class="language-badge english">English</div>
+            <div class="language-badge urdu">اردو</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
